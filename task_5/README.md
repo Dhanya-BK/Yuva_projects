@@ -12,10 +12,14 @@ The project classifies clothing categories from the **Fashion-MNIST** dataset. T
 
 ## Repository Structure
 
+'''text
 
 ├── main.py                             # Training and evaluation script
+
 ├── generate_report.py                  # Script to build the Word report (.docx)
+
 ├── Week_05_Deep_Learning_Report.docx   # Comprehensive project report (.docx)
+
 └── README.md                           # Documentation
 
 ---
