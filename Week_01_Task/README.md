@@ -3,20 +3,6 @@ Titanic Dataset — Data Acquisition, Cleaning & Preprocessing
 
 A single-script pipeline that downloads the Titanic passenger dataset, explores it, detects data quality issues, cleans it, and preprocesses it into an analysis-ready format.
 
-Project Structure
-------------------
-Task_1/
-├── titanic_pipeline.py                      # main script — run this
-├── titanic.csv                              # raw input dataset (place here before running)
-├── titanic_cleaned.csv                      # output — after cleaning
-├── titanic_preprocessed.csv                 # output — after preprocessing
-├── Data_Cleaning_Preprocessing_Report.pdf   # full written report
-└── plots/                                   # output — generated charts
-    ├── 01_missing_heatmap.png
-    ├── 02_age_distribution.png
-    ├── 03_fare_distribution.png
-    ├── 04_correlation_heatmap.png
-    └── 05_fare_before_after.png
 Requirements
 ------------------
 Python 3.8+
@@ -27,6 +13,7 @@ Install them with:
 
 bash
 pip install pandas numpy matplotlib seaborn scikit-learn
+
 How to Run
 ----------------
 Make sure titanic.csv is in the same folder as titanic_pipeline.py.
@@ -65,9 +52,9 @@ Titanic passenger dataset, public mirror: https://raw.githubusercontent.com/data
 
 output:
 --------------
-======================================================================
+
 STEP 1: INITIAL DATA EXPLORATION
-======================================================================
+---------------------------------
 
 Shape: (891, 12)
 
@@ -127,7 +114,6 @@ Embarked              2         0.22
 
 Duplicate rows: 0
 
-======================================================================
 STEP 2: OUTLIER & INCONSISTENCY DETECTION
 ======================================================================
 
@@ -139,7 +125,6 @@ IQR-based outlier counts:
 
 Rows with Fare == 0 (inconsistent entries): 15
 
-======================================================================
 STEP 3: DATA CLEANING
 ======================================================================
 Filled missing 'Embarked' with mode: 'S'
@@ -152,7 +137,6 @@ Capped 116 extreme 'Fare' outliers at 66.30
 Remaining missing values: 0
 Saved -> titanic_cleaned.csv
 
-======================================================================
 STEP 4: PREPROCESSING
 ======================================================================
 
