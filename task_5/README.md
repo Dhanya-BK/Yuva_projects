@@ -12,17 +12,16 @@ The project classifies clothing categories from the **Fashion-MNIST** dataset. T
 
 ## Repository Structure
 
-```text
+
 ├── main.py                             # Training and evaluation script
 ├── generate_report.py                  # Script to build the Word report (.docx)
 ├── Week_05_Deep_Learning_Report.docx   # Comprehensive project report (.docx)
 └── README.md                           # Documentation
 
-
 ---
 
 Key Features
-
+--------------------------
 Lightweight Dataset: Efficient ~30 MB footprint using $28 \times 28$ grayscale apparel images.
 Network Architecture: 2-Block CNN with $3 \times 3$ convolutions, ReLU activations, and Max Pooling.Regularization: Batch Normalization and progressive Dropout ($0.25 \rightarrow 0.40$) for variance control.
 Optimization: Adam optimizer with EarlyStopping and ReduceLROnPlateau callbacks.
