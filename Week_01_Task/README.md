@@ -51,10 +51,9 @@ Dataset Source
 Titanic passenger dataset, public mirror: https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv
 
 output:
---------------
-
-STEP 1: INITIAL DATA EXPLORATION
----------------------------------
+================
+Step 1: Inital data exploration
+--------------------------------
 
 Shape: (891, 12)
 
@@ -114,7 +113,7 @@ Embarked              2         0.22
 
 Duplicate rows: 0
 
-STEP 2: OUTLIER & INCONSISTENCY DETECTION
+Step 2:outliers and inconsistency detector
 ======================================================================
 
 IQR-based outlier counts:
@@ -125,7 +124,7 @@ IQR-based outlier counts:
 
 Rows with Fare == 0 (inconsistent entries): 15
 
-STEP 3: DATA CLEANING
+step 3: data cleaning
 ======================================================================
 Filled missing 'Embarked' with mode: 'S'
 Imputed 177 missing 'Age' values using Pclass+Title group median
@@ -137,7 +136,7 @@ Capped 116 extreme 'Fare' outliers at 66.30
 Remaining missing values: 0
 Saved -> titanic_cleaned.csv
 
-STEP 4: PREPROCESSING
+step 4: Preproccessing
 ======================================================================
 
 Final preprocessed shape: (891, 24)
