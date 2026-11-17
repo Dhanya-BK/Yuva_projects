@@ -1,4 +1,4 @@
-# <Yuva Project> — Data Science & Machine Learning Projects
+# Yuva Project — Data Science & Machine Learning Projects
 
 A collection of six hands-on tasks completed during my internship at **<Company / Program Name>**, covering the full data science workflow: data cleaning, exploratory analysis, clustering, supervised learning, deep learning, and an end-to-end capstone.
 
